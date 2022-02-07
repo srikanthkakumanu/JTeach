@@ -17,6 +17,10 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
 ```
+## Git: Add generated SSH Key to Git Repository
+
+Git Server or Repository Admin will add your RSA public key to Git Repository.
+
 ## Git: Clone Git Repository
 
 You need to clone the repository:
@@ -32,9 +36,7 @@ git commit -m "first commit"
 git push -u origin main
 ```
 
-## Add generated SSH Key to Repository
-
-Git Server or Repository Admin will add your RSA public key to Git Repository.
+Note: In real-time, you do not have to use below sections as the project Git repos might have existed already.
 
 ## Create a new repository on the command line
 ```
@@ -57,3 +59,10 @@ git branch -M main
 git push -u origin main
 ```
 
+## Git: Some Useful commands
+
+```
+git status
+git branch --list
+git diff
+```
